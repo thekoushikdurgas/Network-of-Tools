@@ -1,0 +1,201 @@
+/************Global*/
+footer {
+    display: block
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    position: relative;
+    margin: 0;
+    /*padding-bottom: 6rem;*/
+    min-height: 100%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.perfect-centering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.horicenter {
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+/******Footer*/
+
+
+
+
+/************Home Page*/
+
+
+/*Slider*/
+.carousel-caption {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.colortxt {
+    background-color: rgba(255, 255, 255, .3) !important;
+}
+
+.copytxt {
+    cursor: pointer;
+}
+
+.clearboth {
+    clear: both;
+}
+
+.color-picker.static {
+    display: inline-block;
+    position: static;
+}
+
+.color-picker.static .color-picker-control {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.feature-home.boxed--border--bottom {
+    display: inline-block;
+    margin: 0
+}
+
+.feature-home .feature__img {
+    width: 25%;
+    float: left
+}
+
+.feature-home .feature__img img {
+    border-radius: 6px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    border: 2px solid #f4f4f4
+}
+
+.feature-home a:hover img {
+    opacity: .85
+}
+
+.feature-home .feature__body {
+    width: 75%;
+    padding-left: 50px;
+    float: right
+}
+
+.feature-home .feature__body.noimg {
+    width: 100%;
+    padding-left: 0;
+    float: right
+}
+
+.feature-5 p {
+    min-height: 5.57142857em
+}
+
+.showcase {
+    /*background-color: #dddddd;*/
+}
+
+/**************************************Contact Us*/
+
+.content-header {
+    font-family: 'Oleo Script', cursive;
+    color: #fcc500;
+    font-size: 45px;
+}
+
+.section-content {
+    text-align: center;
+
+}
+
+#contact {
+
+    font-family: 'Teko', sans-serif;
+    padding-top: 60px;
+    width: 100%;
+    /*width: 100vw;*/
+    height: 550px;
+    background: #3a6186; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3a6186, #89253e); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3a6186, #89253e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+.contact-section {
+    padding-top: 40px;
+}
+
+.contact-section .col-md-6 {
+    width: 50%;
+}
+
+.form-line {
+    border-right: 1px solid #B29999;
+}
+
+.form-group {
+    margin-top: 10px;
+}
+
+label {
+    font-size: 1.3em;
+    line-height: 1em;
+    font-weight: normal;
+}
+
+.form-control {
+    font-size: 1.3em;
+    color: #080808;
+}
+
+textarea.form-control {
+    height: 165px;
+    /* margin-top: px;*/
+}
+
+.submit {
+    font-size: 1.1em;
+    float: right;
+    width: 150px;
+    background-color: transparent;
+    color: #fff;
+
+}
+
+
+.container {
+    /*margin-top: 20px;*/
+}
+/*********** Tools  */
+/*Image Dropbox*/
+.base64 {
+    margin-top: 20px;
+
+}
+
+#container {
+    border: 3px dashed #91917d;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 76px;
+    margin-top: 35px;
+    padding: 2px;
+    text-transform: uppercase;
+    border-radius: 6px;
+}

@@ -1,0 +1,48 @@
+tools = ["Article Rewriter","Plagiarism Checker","Backlink Maker","Meta Tag Generator","Meta Tags Analyzer","Keyword Position Checker","Robots.txt Generator","XML Sitemap Generator","Backlink Checker","Alexa Rank Checker","Word Counter","Online Ping Website Tool","Link Analyzer","My IP Address","Keyword Density Checker","Google Malware Checker","Domain Age Checker","Whois Checker","Domain into IP","URL Rewriting Tool","www Redirect Checker","Mozrank Checker","URL Encoder \/ Decoder","Server Status Checker","Webpage Screen Resolution Simulator","Page Size Checker","Reverse IP Domain Checker","Blacklist Lookup","Suspicious Domain Checker","Link Price Calculator","Website Screenshot Generator","Domain Hosting Checker","Get Source Code of Webpage","Google Index Checker","Website Links Count Checker","Class C Ip Checker","Online Md5 Generator","Page Speed Checker","Code to Text Ratio Checker","Find DNS records","What is my Browser","Email Privacy","Google Cache Checker","Broken Links Finder","Search Engine Spider Simulator","Keywords Suggestion Tool","Domain Authority Checker","Page Authority Checker","Pagespeed Insights Checker"]; toolsURL = ["https:\/\/tools-network.com\/seotools\/article-rewriter","https:\/\/tools-network.com\/seotools\/plagiarism-checker","https:\/\/tools-network.com\/seotools\/backlink-maker","https:\/\/tools-network.com\/seotools\/meta-tag-generator","https:\/\/tools-network.com\/seotools\/meta-tags-analyzer","https:\/\/tools-network.com\/seotools\/keyword-position-checker","https:\/\/tools-network.com\/seotools\/robots-txt-generator","https:\/\/tools-network.com\/seotools\/xml-sitemap-generator","https:\/\/tools-network.com\/seotools\/backlink-checker","https:\/\/tools-network.com\/seotools\/alexa-rank-checker","https:\/\/tools-network.com\/seotools\/word-counter","https:\/\/tools-network.com\/seotools\/online-ping-website-tool","https:\/\/tools-network.com\/seotools\/link-analyzer-tool","https:\/\/tools-network.com\/seotools\/my-ip-address","https:\/\/tools-network.com\/seotools\/keyword-density-checker","https:\/\/tools-network.com\/seotools\/google-malware-checker","https:\/\/tools-network.com\/seotools\/domain-age-checker","https:\/\/tools-network.com\/seotools\/whois-checker","https:\/\/tools-network.com\/seotools\/domain-into-ip","https:\/\/tools-network.com\/seotools\/url-rewriting-tool","https:\/\/tools-network.com\/seotools\/www-redirect-checker","https:\/\/tools-network.com\/seotools\/mozrank-checker","https:\/\/tools-network.com\/seotools\/url-encoder-decoder","https:\/\/tools-network.com\/seotools\/server-status-checker","https:\/\/tools-network.com\/seotools\/webpage-screen-resolution-simulator","https:\/\/tools-network.com\/seotools\/page-size-checker","https:\/\/tools-network.com\/seotools\/reverse-ip-domain-checker","https:\/\/tools-network.com\/seotools\/blacklist-lookup","https:\/\/tools-network.com\/seotools\/suspicious-domain-checker","https:\/\/tools-network.com\/seotools\/link-price-calculator","https:\/\/tools-network.com\/seotools\/website-screenshot-generator","https:\/\/tools-network.com\/seotools\/domain-hosting-checker","https:\/\/tools-network.com\/seotools\/get-source-code-of-webpage","https:\/\/tools-network.com\/seotools\/google-index-checker","https:\/\/tools-network.com\/seotools\/website-links-count-checker","https:\/\/tools-network.com\/seotools\/class-c-ip-checker","https:\/\/tools-network.com\/seotools\/online-md5-generator","https:\/\/tools-network.com\/seotools\/page-speed-checker","https:\/\/tools-network.com\/seotools\/code-to-text-ratio-checker","https:\/\/tools-network.com\/seotools\/find-dns-records","https:\/\/tools-network.com\/seotools\/what-is-my-browser","https:\/\/tools-network.com\/seotools\/email-privacy","https:\/\/tools-network.com\/seotools\/google-cache-checker","https:\/\/tools-network.com\/seotools\/broken-links-finder","https:\/\/tools-network.com\/seotools\/spider-simulator","https:\/\/tools-network.com\/seotools\/keywords-suggestion-tool","https:\/\/tools-network.com\/seotools\/domain-authority-checker","https:\/\/tools-network.com\/seotools\/page-authority-checker","https:\/\/tools-network.com\/seotools\/pagespeed-insights-checker"];searchNo = 'No result found related to your keyword...'; keyCheck = 'Site keywords field can\'t be empty!'; desCheck = 'Site dscription field can\'t be empty!'; titleCheck = 'Site title field can\'t be empty!'; capRefresh = 'Loading...'; charLeft = 'Characters left'; inputURL = 'Enter a valid URL'; inputEm = 'Input data field can\'t be empty'; capCodeWrg = 'Your image verification code is wrong!'; imageVr = 'Please verify your image verification'; emptyStr = 'Domain name field can\'t be empty!'; oopsStr = 'Oops...'; baseUrl = 'https://tools-network.com/seotools/'; axPath = 'https://tools-network.com/seotools/ajax'; var trackLink = 'https://tools-network.com/seotools/rainbow/track'; var xdEnabled = false;    function parseHost(url) {
+    var a=document.createElement('a');
+    a.href=url;
+    return a.hostname;
+    }
+    jQuery(document).ready(function(){
+    var screenSize = window.screen.width + 'x' + window.screen.height;
+    var myUrl = window.location.href;
+    var myHost = window.location.hostname;
+    var refUrl = document.referrer;
+    var refHost = parseHost(refUrl);
+    if(myHost == refHost)
+    refUrl = 'Direct';
+    jQuery.post(trackLink,{page:myUrl,ref:refUrl,screen:screenSize},function(data){
+    });
+    if(xdEnabled){
+    var xdBlockEnabled = false;
+    var testAd = document.createElement('div');
+    testAd.innerHTML = '&nbsp;';
+    testAd.className = 'adsense banner_ad pub_728x90 pub_300x250';
+    document.body.appendChild(testAd);
+    window.setTimeout(function() {
+    if (testAd.offsetHeight === 0) {
+    xdBlockEnabled = true;
+    }
+    testAd.remove();
+    if(xdBlockEnabled){
+    if(xdOption == 'link'){
+    window.location = xdData1;
+    }else if(xdOption == 'close'){
+    $('#xdTitle').html(xdData1);
+    $('#xdContent').html(xdData2);
+    $('#xdBox').modal('show');
+    }else if(xdOption == 'force'){
+    $('#xdClose').hide();
+    $('#xdTitle').html(xdData1);
+    $('#xdContent').html(xdData2);
+    $('#xdBox').modal({
+    backdrop: 'static',
+    keyboard: false
+    });
+    $('#xdBox').modal('show');
+    }
+    }
+    }, 100);
+    }
+    });
+    
